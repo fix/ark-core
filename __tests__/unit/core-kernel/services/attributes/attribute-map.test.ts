@@ -77,25 +77,25 @@ describe("AttributeMap", () => {
         expect(map.has("someAttribute")).toBeFalse();
     });
 
-    it("should throw if an an unknown attribute is tried to be retrieved", () => {
+    it("should throw if an unknown attribute is tried to be retrieved", () => {
         const map: AttributeMap = new AttributeMap(new AttributeSet());
 
         expect(() => map.get("someAttribute")).toThrow("Unknown attribute: someAttribute");
     });
 
-    it("should throw if an an unknown attribute is tried to be set", () => {
+    it("should throw if an unknown attribute is tried to be set", () => {
         const map: AttributeMap = new AttributeMap(new AttributeSet());
 
         expect(() => map.set("someAttribute", "value")).toThrow("Unknown attribute: someAttribute");
     });
 
-    it("should throw if an an unknown attribute is tried to be forgotten", () => {
+    it("should throw if an unknown attribute is tried to be forgotten", () => {
         const map: AttributeMap = new AttributeMap(new AttributeSet());
 
         expect(() => map.forget("someAttribute")).toThrow("Unknown attribute: someAttribute");
     });
 
-    it("should throw if an an unknown attribute is tried to be checked", () => {
+    it("should throw if an unknown attribute is tried to be checked", () => {
         const map: AttributeMap = new AttributeMap(new AttributeSet());
 
         expect(() => map.has("someAttribute")).toThrow("Unknown attribute: someAttribute");

@@ -178,7 +178,7 @@ describe("Bridgechain registration transaction", () => {
                 expect(error).not.toBeUndefined();
             });
 
-            it("should fail duo to to big repository, max 100 chars", () => {
+            it("should fail duo to big repository, max 100 chars", () => {
                 const bridgechainRegistration = builder
                     .bridgechainRegistrationAsset({
                         name: "google",
